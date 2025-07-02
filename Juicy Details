@@ -1,0 +1,46 @@
+Juicy Details — TryHackMe
+
+Overview:
+This room focused on analyzing logs from a breached system to understand how an attacker gained access, what tools and techniques were used, and what data was stolen. I practiced basic research, reconnaissance, and log analysis.
+
+Tasks Completed:
+
+1️⃣ Reconnaissance:
+
+    Downloaded and extracted auth.log, vsftpd.log, and access.log for analysis.
+
+    Identified the attacker’s tools in order of occurrence: nmap, hydra, sqlmap, curl, and feroxbuster.
+
+    Found the brute-force vulnerability at the endpoint: /rest/user/login.
+
+    Found the SQL injection vulnerability at the endpoint: /rest/products/search.
+
+    Determined the vulnerable parameter for SQL injection: q.
+
+    Found that the attacker attempted to retrieve files using FTP (confirmed in vsftpd.log).
+
+2️⃣ Stolen Data:
+
+    Discovered the attacker scraped user email addresses via the product reviews section.
+
+    Confirmed the brute-force attack succeeded — timestamp: 11/Apr/2021:09:16:31 +0000.
+
+    Verified the attacker retrieved user email and password information through SQL injection.
+
+    Found the attacker downloaded backup files: coupons_2013.md.bak and www-data.bak.
+
+    Determined the service and account used to retrieve files: FTP, anonymous.
+
+    Identified the attacker gained shell access using SSH with the www-data account.
+
+Skills Practiced:
+
+    Log analysis (cat, grep, less)
+
+    Identifying brute-force and SQLi patterns in logs
+
+    Endpoint vulnerability analysis
+
+    Tracking attacker movement and data exfiltration
+
+    Extracting indicators of compromise (IoCs)
