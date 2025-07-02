@@ -1,0 +1,29 @@
+🗂️ Investigating Windows
+
+🔗 Room: Investigating Windows — TryHackMe
+🎯 Objective: A windows machine has been hacked, its your job to go investigate this windows machine and find clues to what the hacker might have done..
+🛠️ Tools & Skills:
+
+    Windows Event Logs
+
+    Basic forensic triage
+
+    Timeline analysis
+
+📌 How I solved it:
+
+    Connected to the RDP
+
+    Analyzed logs for suspicious login attempts.
+
+    Correlated timestamps to spot malicious processes.
+
+    Extracted indicators of compromise (IoCs) and answered all questions.
+
+💡 Key Takeaways:
+
+    Practiced real-life blue team tasks: log analysis & forensic investigation.
+
+    Learned to trace attacker activity through Windows artifacts.
+
+    Improved my skills in timeline building and event correlation.
